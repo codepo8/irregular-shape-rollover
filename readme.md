@@ -5,7 +5,7 @@ This is a quick demo showing how you can use the HTML5 Canvas API to create a ro
 
 You can try out the demo at http://codepo8.github.io/irregular-shape-rollover/ 
 
-rollover.gif
+![Rollover demo](rollover.gif)
 
 The usage of this example is very simple. Just include the shaperollover.js script and add a class of `rollover` to each image you want to add a roll-over effect to. 
 
