@@ -9,9 +9,9 @@
   var oy = 0;
 
   while (all--) {
-    images[all].addEventListener('mouseenter', copyimage, false);
-    images[all].addEventListener('mousemove', hover, false);
-    images[all].addEventListener('mouseleave', resetimg, false);
+    images[all].addEventListener('mouseover', copyimage, false);
+   images[all].addEventListener('mousemove', hover, false);
+    images[all].addEventListener('mouseout', resetimg, false);
   }
 
   function copyimage(ev) {
@@ -29,7 +29,7 @@
   }
 
   function hover(ev) {
-    if (pixelcolour(ev.clientX-ox,ev.clientY-oy).a === 0) {
+    if (pixelcolour(ev.clientX - ox, ev.clientY - oy).a === 0) {
       ev.target.classList.remove('over');
     } else {
       ev.target.classList.add('over');
