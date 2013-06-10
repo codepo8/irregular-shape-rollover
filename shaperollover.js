@@ -1,5 +1,5 @@
 (function(){
- 
+
   var c = document.createElement('canvas');
   var cx = c.getContext('2d');
   var images = document.querySelectorAll('.rollover');
