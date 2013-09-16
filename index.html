@@ -15,13 +15,37 @@
     background: green;
     cursor: pointer;
   }
+  p img {
+    float: none;
+    clear: both;
+  }
   </style>
 </head>
 <body>
 <img src="bottle.png" alt="bottle vapours" class="rollover">
 <img src="burning-embers.png" alt="burning embers" class="rollover">
 <img src="imp.gif" alt="imp" class="rollover">
+<p>
+  <a href="http://christianheilmann.com">
+    <img src="burning-embers.png" alt="burning embers" class="rollover">
+  </a>
+</p>
 
 <script src="shaperollover.js"></script>
+<script>
+
+/* 
+  A quick demo how to detect clicks…
+*/
+var link = document.querySelector('a');
+
+function testinshape(ev) {
+  if (ev.target.className.indexOf(' over') === -1) {
+    ev.preventDefault();
+  }
+}
+link.addEventListener('click',testinshape,false);
+
+</script>
 </body>
 </html>
